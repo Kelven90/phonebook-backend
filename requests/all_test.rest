@@ -1,0 +1,32 @@
+### Get all
+GET https://phonebook-backend-8h0d.onrender.com/api/persons
+
+### Get one
+GET https://phonebook-backend-8h0d.onrender.com/api/persons/6a0e813a320d11fd7eb022ad
+
+### Info
+GET https://phonebook-backend-8h0d.onrender.com/api/info
+
+### Add new
+POST https://phonebook-backend-8h0d.onrender.com/api/persons
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "number": "123-456"
+}
+
+### Update existing
+PUT https://phonebook-backend-8h0d.onrender.com/api/persons/PASTE_ID_HERE
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "number": "999-999"
+}
+
+### Delete
+DELETE https://phonebook-backend-8h0d.onrender.com/api/persons/PASTE_ID_HERE
+
+### Bad id test
+GET https://phonebook-backend-8h0d.onrender.com/api/persons/123
